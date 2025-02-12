@@ -62,10 +62,10 @@ curl -X POST "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/" 
 curl -X GET "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/?id=123"
 ```
 ## 🔧 Features
-✅ Fully Serverless – No need for EC2 or manual infrastructure
-✅ Infrastructure as Code – Terraform ensures reproducibility
-✅ Scalable – Uses API Gateway and DynamoDB for serverless scaling
-✅ Secure – Uses IAM roles for least privilege access
+** ✅ Fully Serverless – No need for EC2 or manual infrastructure** 
+** ✅ Infrastructure as Code – Terraform ensures reproducibility** 
+** ✅ Scalable – Uses API Gateway and DynamoDB for serverless scaling** 
+** ✅ Secure – Uses IAM roles for least privilege access** 
 
 ## 🛠 Development Guide
 ## 🔹 1. Modify Lambda Code
