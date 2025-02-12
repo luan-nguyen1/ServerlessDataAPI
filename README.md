@@ -7,7 +7,6 @@ This project provides an **event-driven, serverless backend** for storing and re
 - **API Gateway integrations** for routing requests
 - **AWS security best practices** for least privilege access
 
----
 
 ## ⚡ Tech Stack
 - **AWS Lambda** (Python)
@@ -16,7 +15,6 @@ This project provides an **event-driven, serverless backend** for storing and re
 - **Terraform** (Infrastructure as Code)
 - **AWS CloudWatch** (Logging & Monitoring)
 
----
 
 ## 📂 Architecture
 
@@ -25,8 +23,6 @@ Client → API Gateway → Lambda → DynamoDB
 - **API Gateway** handles HTTP requests.
 - **Lambda** processes the request and interacts with **DynamoDB**.
 - **Terraform** provisions all infrastructure as code.
-
----
 
 ## 🚀 Deployment Guide
 
@@ -47,7 +43,7 @@ cd terraform
 terraform init
 terraform apply -auto-approve
 ```
-ℹ️ Note: The Terraform script provisions the Lambda function, API Gateway, DynamoDB table, and IAM roles.
+---
 
 ## 🔍 Testing the API
 ## 📝 Store Data
@@ -61,16 +57,18 @@ curl -X POST "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/" 
 ```bash
 curl -X GET "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/?id=123"
 ```
+
+---
+
 ## 🔧 Features
-** ✅ Fully Serverless – No need for EC2 or manual infrastructure** 
-** ✅ Infrastructure as Code – Terraform ensures reproducibility** 
-** ✅ Scalable – Uses API Gateway and DynamoDB for serverless scaling** 
-** ✅ Secure – Uses IAM roles for least privilege access** 
+- Fully Serverless – No need for EC2 or manual infrastructure
+- Infrastructure as Code – Terraform ensures reproducibility
+- Scalable – Uses API Gateway and DynamoDB for serverless scaling
+- Secure – Uses IAM roles for least privilege access
 
 ## 🛠 Development Guide
 ## 🔹 1. Modify Lambda Code
-lambda/lambda_function.py
-Zip and redeploy:
+- Zip and redeploy:
 ```bash
 cd lambda
 zip lambda_function.zip lambda_function.py
