@@ -4,7 +4,7 @@ A fully **serverless** API using AWS Lambda, API Gateway, and DynamoDB. Infrastr
 ## 📌 Overview
 This project provides an **event-driven, serverless backend** for storing and retrieving data using AWS services. It demonstrates:
 - **Infrastructure as Code (IaC)** with Terraform
-- **API Gateway integrations** for routing requests
+- **API Gateway integration** for routing requests
 - **AWS security best practices** for least privilege access
 
 
@@ -26,18 +26,17 @@ Client → API Gateway → Lambda → DynamoDB
 
 ## 🚀 Deployment Guide
 
-### 1️⃣ Prerequisites
-Ensure you have:
+### Prerequisites
 - **AWS CLI** installed and configured  
 - **Terraform** installed (`terraform -v`)  
 - **Git** installed (`git --version`)  
 
-### 2️⃣ Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/ServerlessDataAPI.git
 cd ServerlessDataAPI
 ```
-## 3️⃣ Deploy Using Terraform
+### Deploy Using Terraform
 ```bash
 cd terraform
 terraform init
@@ -46,13 +45,13 @@ terraform apply -auto-approve
 ---
 
 ## 🔍 Testing the API
-## 📝 Store Data
+## Store Data
 ```bash
 curl -X POST "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/" \
      -H "Content-Type: application/json" \
      -d '{"id": "123", "name": "Luan"}'
 ```
-## 📥 Retrieve Data
+## Retrieve Data
 
 ```bash
 curl -X GET "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/?id=123"
