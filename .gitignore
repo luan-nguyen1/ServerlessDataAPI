@@ -1,0 +1,17 @@
+
+# Terraform files
+.terraform/
+terraform.tfstate*
+terraform.tfstate.backup
+*.tfvars
+
+# Python files
+__pycache__/
+*.pyc
+
+# AWS Lambda deployment files
+lambda_function.zip
+
+# System files
+.DS_Store
+
