@@ -1,14 +1,14 @@
 # ServerlessDataAPI
 A fully **serverless** API using AWS Lambda, API Gateway, and DynamoDB. Infrastructure is managed using **Terraform** for repeatability and scalability.
 
-## 📌 Overview
+## Overview
 This project provides an **event-driven, serverless backend** for storing and retrieving data using AWS services. It demonstrates:
 - **Infrastructure as Code (IaC)** with Terraform
 - **API Gateway integration** for routing requests
 - **AWS security best practices** for least privilege access
 
 
-## ⚡ Tech Stack
+## Tech Stack
 - **AWS Lambda** (Python)
 - **AWS API Gateway**
 - **DynamoDB** (NoSQL)
@@ -16,7 +16,7 @@ This project provides an **event-driven, serverless backend** for storing and re
 - **AWS CloudWatch** (Logging & Monitoring)
 
 
-## 📂 Architecture
+## Architecture
 
 Client → API Gateway → Lambda → DynamoDB
 
@@ -24,7 +24,7 @@ Client → API Gateway → Lambda → DynamoDB
 - **Lambda** processes the request and interacts with **DynamoDB**.
 - **Terraform** provisions all infrastructure as code.
 
-## 🚀 Deployment Guide
+## Deployment Guide
 
 ### Prerequisites
 - **AWS CLI** installed and configured  
@@ -44,7 +44,7 @@ terraform apply -auto-approve
 ```
 ---
 
-## 🔍 Testing the API
+## Testing the API
 ## Store Data
 ```bash
 curl -X POST "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/" \
@@ -59,14 +59,14 @@ curl -X GET "https://YOUR_API_ID.execute-api.eu-central-1.amazonaws.com/prod/?id
 
 ---
 
-## 🔧 Features
+## Features
 - Fully Serverless – No need for EC2 or manual infrastructure
 - Infrastructure as Code – Terraform ensures reproducibility
 - Scalable – Uses API Gateway and DynamoDB for serverless scaling
 - Secure – Uses IAM roles for least privilege access
 
-## 🛠 Development Guide
-## 🔹 1. Modify Lambda Code
+## Development Guide
+## 1. Modify Lambda Code
 - Zip and redeploy:
 ```bash
 cd lambda
@@ -74,15 +74,15 @@ zip lambda_function.zip lambda_function.py
 aws lambda update-function-code --function-name serverless_api_lambda \
     --zip-file fileb://lambda_function.zip --region eu-central-1
 ```
-## 🔹 2. Debugging
+## 2. Debugging
 Check logs:
 ```bash
 aws logs tail /aws/lambda/serverless_api_lambda --region eu-central-1 --format short
 ```
-📌 Next Steps
+Next Steps
  Add Authentication (Cognito, API Keys)
  Implement CI/CD using GitHub Actions
  Optimize Terraform Modules
  
-## 📝 Lessons Learned
+## Lessons Learned
 [🔗 Read the technical breakdown on Medium ](https://medium.com/@luanmacek/building-a-serverless-api-with-aws-lambda-api-gateway-dynamodb-22c9bb06ef5b)
