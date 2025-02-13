@@ -85,4 +85,4 @@ aws logs tail /aws/lambda/serverless_api_lambda --region eu-central-1 --format s
  Optimize Terraform Modules
  
 📝 Lessons Learned
-🔗 Read the full technical breakdown on Medium (Link to be added after the blog post is written.)
+[🔗 Read the full technical breakdown on Medium ](https://medium.com/@luanmacek/building-a-serverless-api-with-aws-lambda-api-gateway-dynamodb-22c9bb06ef5b)
